@@ -6,9 +6,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.log4j.Logger;
 
-import cn.fywspring.hadoopd.test.XMLReaderDemo;
 
 public class WCMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 	
@@ -17,7 +15,7 @@ public class WCMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 			throws IOException, InterruptedException {
 		try {
 			String string = value.toString();
-			String text = XMLReaderDemo.getValue(string);
+			String text = MyXMLReader.getValue(string);
 			if(!"".equals(text)){
 				String[] words = text.split(" ");
 				for (String word : words) {

@@ -8,7 +8,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
 
-import cn.fywspring.hadoopd.test.XMLReaderDemo;
 
 public class AVGMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 	

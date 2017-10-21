@@ -1,4 +1,4 @@
-package cn.fywspring.hadoopd.test;
+package cn.fywspring.hadoopd.wc_xml;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

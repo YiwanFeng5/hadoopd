@@ -1,11 +1,11 @@
-package cn.fywspring.hadoopd.test;
+package cn.fywspring.hadoopd.wc_xml;
 
 import java.io.ByteArrayInputStream;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-public class XMLReaderDemo {
+public class MyXMLReader {
 	public static void main(String[] args) {
 		System.out.println(getValue("<words><word>hello</word></words>"));
 	}
